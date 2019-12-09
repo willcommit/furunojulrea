@@ -164,7 +164,7 @@ input, select, textarea {
 
 	strong, b {
 		font-weight: 400;
-		color: #555;
+		color: #fff;
 	}
 
 	em, i {
@@ -188,7 +188,7 @@ input, select, textarea {
 		}
 
 	h2 {
-		font-size: 1.25em;
+		font-size: 1.5em;
 	}
 
 	h3 {
@@ -826,6 +826,18 @@ input, select, textarea {
 			}
 
 /* Main */
+
+
+	#partnersite {
+		background: rgb(56, 56, 56);
+		height: 100%;
+		width: 100%;
+		color: inherit;	
+		overflow: auto;	
+	}
+	
+	
+			
 
 	#main {
 		-moz-transition: opacity 0.75s ease, right 0.75s ease, left 0.75s ease, visibility 0.75s;
