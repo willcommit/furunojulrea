@@ -8,9 +8,7 @@ var Products = []
 fetch(url)
   .then(response => response.json())
   .then(data => {
-
-    console.log(data)
-
+    
     data.data.forEach(element => {
       const Product = {}
       Product.name = element.name
