@@ -46,7 +46,6 @@ fetch(url)
       productCard.innerHTML = productCardContent
 
       if (!product.inStock) {
-        console.log(productCard.children[2].children[1].children[0])
         productCard.children[0].classList.remove("ribbon-display")
         productCard.children[2].children[1].children[0].disabled = true
       }
