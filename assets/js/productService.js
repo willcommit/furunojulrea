@@ -46,7 +46,9 @@ fetch(url)
       productCard.innerHTML = productCardContent
 
       if (!product.inStock) {
+        console.log(productCard.children[2].children[1].children[0])
         productCard.children[0].classList.remove("ribbon-display")
+        productCard.children[2].children[1].children[0].disabled = true
       }
 
       grid.appendChild(productCard)
@@ -71,20 +73,4 @@ window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
-
-
-function initMap() {
-  // The location of Uluru
-  const uluru = { lat: -25.344, lng: 131.036 };
-  // The map, centered at Uluru
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 4,
-    center: uluru,
-  });
-  // The marker, positioned at Uluru
-  const marker = new google.maps.Marker({
-    position: uluru,
-    map: map,
-  });
 }

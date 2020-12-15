@@ -153,6 +153,16 @@ body {
     filter: brightness(1.3);
 }
 
+input:disabled {
+    background: #ccc;
+}
+
+input:hover:disabled {
+    outline-style: none;
+    filter: none;
+}
+
+
 .contact-card {
     min-width: 256px;
     display: flex;
