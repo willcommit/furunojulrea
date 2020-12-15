@@ -28,7 +28,7 @@ fetch(url)
                 <div class="card-content">
                   <div class="text-container">
                     <div>
-                        <p class="product-name">${product.name}</h4>
+                        <p class="product-name">${product.name}</p>
                         <div class="product-text">${product.text}</div>
                     </div>
                     <div>
@@ -71,4 +71,20 @@ window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+}
+
+
+function initMap() {
+  // The location of Uluru
+  const uluru = { lat: -25.344, lng: 131.036 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: uluru,
+  });
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+  });
 }
