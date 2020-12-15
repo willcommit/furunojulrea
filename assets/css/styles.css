@@ -154,6 +154,7 @@ body {
 }
 
 .contact-card {
+    min-width: 256px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

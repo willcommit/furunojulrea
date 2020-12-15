@@ -36,7 +36,7 @@ fetch(url)
                       <p class="sale-price">${product.salesPrice}sek</p>
                     </div>
                   </div>
-                  <form action="http://www.furuno.se/aaterfoersaeljare/" target="_blank">
+                  <form action="./aterforsaljare.html" target="_blank">
                       <input class="buy-btn" type="submit" value="Beställ" />
                   </form>
                 </div>

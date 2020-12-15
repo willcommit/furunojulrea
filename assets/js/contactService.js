@@ -61,7 +61,7 @@ fetch(url)
             westgrid.appendChild(contactCard)
             break;
           case "south":
-            sothgrid.appendChild(contactCard)
+            southgrid.appendChild(contactCard)
             break;
           default:
             break;
