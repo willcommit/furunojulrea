@@ -14,6 +14,8 @@ fetch(url)
       Product.name = element.name
       Product.text = element.text
       Product.inStock = element.in_stock
+      Product.showCustomLabel = element.show_custom_label
+      Product.customLabelText = element.custom_label
       Product.price = element.price
       Product.salesPrice = element.sales_price
       Product.image = element.image.data.full_url
@@ -24,6 +26,7 @@ fetch(url)
       const productCard = document.createElement('div');
       var productCardContent = `
                 <div class="ribbon-display ribbon ribbon-top-right"><span>SÅLD</span></div>
+                <div class="ribbon-display ribbon ribbon-top-right"><span>${product.customLabelText}</span></div>
                 <img class="product-image" src="${product.image}" alt="">
                 <div class="card-content">
                   <div class="text-container">
@@ -45,9 +48,13 @@ fetch(url)
 
       productCard.innerHTML = productCardContent
 
+      if (product.showCustomLabel && product.inStock) {
+        productCard.children[1].classList.remove("ribbon-display")        
+      }
+
       if (!product.inStock) {
         productCard.children[0].classList.remove("ribbon-display")
-        productCard.children[2].children[1].children[0].disabled = true
+        productCard.children[3].children[1].children[0].disabled = true
       }
 
       grid.appendChild(productCard)
