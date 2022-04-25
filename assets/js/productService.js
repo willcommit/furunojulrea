@@ -1,7 +1,7 @@
 
 var grid = document.getElementById('grid')
 
-const url = 'https://cms.furuno.se/furuno_new_cms/items/produkter?fields=*.*.*'
+const url = 'http://207.154.248.109/furuno_new_cms/items/produkter?fields=*.*.*'
 
 var Products = []
 

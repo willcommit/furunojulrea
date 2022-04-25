@@ -4,7 +4,7 @@ var eastgrid = document.getElementById('eastgrid')
 var southgrid = document.getElementById('southgrid')
 
 
-const url = 'https://207.154.248.109/furuno_new_cms/items/resellers?fields=*.*.*'
+const url = 'http://207.154.248.109/furuno_new_cms/items/resellers?fields=*.*.*'
 
 var Contacts = []
 
